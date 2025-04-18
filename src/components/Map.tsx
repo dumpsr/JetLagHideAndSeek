@@ -460,7 +460,8 @@ export const Map = ({ className }: { className?: string }) => {
             >
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a> and <a href="http://www.thunderforest.com/">Thunderforest</a>'
-                    url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+                    // url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+                    url="https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}{r}.png?apikey=6e5478c8a4f54c779f85573c0e399391"
                     subdomains="abcd"
                     maxZoom={20} // This technically should be 6, but once the ratelimiting starts this can take over
                     minZoom={2}
